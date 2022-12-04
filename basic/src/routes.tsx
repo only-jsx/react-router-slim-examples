@@ -20,7 +20,7 @@ function Link({ children, to, replace }: LinkProps) {
     const onClick = React.useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         navigate?.(to, undefined, replace);
-    }, [to, navigate]);
+    }, [to, replace, navigate]);
 
     return <a href={to} onClick={onClick}>{children}</a>
 }

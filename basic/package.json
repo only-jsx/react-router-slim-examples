@@ -1,13 +1,14 @@
 {
   "name": "rect-router-slim-example",
-  "homepage": "react-router",
+  "homepage": "react-router/#/react-router",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "path-to-regexp": "^6.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
-    "react-router-slim": "^0.0.9-beta.1"
+    "react-router-slim": "^0.0.9-beta.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
