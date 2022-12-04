@@ -8,7 +8,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
+        <h1>This part is routed by the Browser History</h1>
         <App />
+        <h1>This part is routed by the URL hash</h1>
+        <App hash/>
     </React.StrictMode>
 );
 
