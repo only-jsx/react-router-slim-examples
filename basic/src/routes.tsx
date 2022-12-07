@@ -42,7 +42,7 @@ export function Layout() {
         </nav>
         <p>
             Click on over to <Link to='/react-router/todos'>/todos</Link> and check out these
-            data loading APIs!{' '}
+            data loading APIs!
         </p>
     </>;
 }
