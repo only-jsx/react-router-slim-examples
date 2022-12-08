@@ -13,7 +13,6 @@ describe('App tests', () => {
     const itTab = (name: string, navigate: string, text: string) => it(name, ()=>{
         router.navigate?.(navigate);
         render(<App />);
-        screen.debug();
         const element = screen.getByText(text);
         expect(element).toBeInTheDocument();
     });
