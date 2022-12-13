@@ -60,10 +60,14 @@ function getCurrentPath() {
     return window.location.hash;
 }
 
+const hashRouterProps = {
+    match, navigate: hashNavigate, changeEvent: 'hashchange', getCurrentPath
+};
+
+const historyRouterProps = { navigate: historyNavigate };
+
 export default function App({ hash }: { hash?: boolean }) {
-    const rp = hash ? {
-        match, navigate: hashNavigate, changeEvent: 'hashchange', getCurrentPath
-    } : { navigate: historyNavigate }
+    const rp = hash ? hashRouterProps : historyRouterProps;
 
     return <Router {...rp}>
         <Route path="/react-router(.*)">
