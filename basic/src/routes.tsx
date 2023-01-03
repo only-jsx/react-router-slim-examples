@@ -16,11 +16,10 @@ interface LinkProps extends React.PropsWithChildren {
 
 function Link({ children, to, replace }: LinkProps) {
     const router = React.useContext(RouterContext);
-    const navigate = router.navigate;
-    const onClick = React.useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    const onClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
-        navigate?.(to, undefined, replace);
-    }, [to, replace, navigate]);
+        router.navigate?.(to, undefined, replace);
+    };
 
     return <a href={to} onClick={onClick}>{children}</a>
 }
