@@ -1,8 +1,9 @@
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { RouterContext, RouteContext } from 'react-router-slim';
 
 import App from './app';
-import {Todo} from './routes';
+import { Todo } from './routes';
 
 const router: RouterContext = {
     match: (path: string) => ({}),
@@ -10,7 +11,7 @@ const router: RouterContext = {
 }
 
 describe('App tests', () => {
-    const itTab = (name: string, navigate: string, text: string) => it(name, ()=>{
+    const itTab = (name: string, navigate: string, text: string) => it(name, () => {
         router.navigate?.(navigate);
         render(<App />);
         const element = screen.getByText(text);
@@ -28,7 +29,7 @@ test('renders todo item page', () => {
 
     const route: RouteContext = {
         path: '/react-router/todo/1',
-        params: { id: '1'},
+        params: { id: '1' },
     }
 
     render(

@@ -1,6 +1,6 @@
 import React from 'react';
-import { FallbackProps } from 'react-error-boundary';
-import { Params, RouterContext, RouteContext } from 'react-router-slim';
+import type { FallbackProps } from 'react-error-boundary';
+import { type Params, RouterContext, RouteContext } from 'react-router-slim';
 
 import type { Todos } from './todos';
 import { addTodo, deleteTodo, getTodos } from './todos';
@@ -298,7 +298,7 @@ export function ErrorBoundary(props: FallbackProps) {
     );
 }
 
-export function ErrorComponent(): JSX.Element {
+export function ErrorComponent(): React.JSX.Element {
     throw new Error('Error in route handler!');
 }
 
