@@ -44,7 +44,7 @@ export default {
     devtool: 'inline-source-map',
     devServer: {
         port: 3000,
-        open: '/react-router/#/react-router/',
+        open: '/react-router#/react-router',
         hot: true,
         historyApiFallback: true,
         static: false,
