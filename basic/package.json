@@ -5,9 +5,9 @@
   "private": true,
   "dependencies": {
     "path-to-regexp": "^8.3.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-slim": "^0.1.5"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-slim": "0.1.6"
   },
   "scripts": {
     "start": "webpack serve",
@@ -22,8 +22,8 @@
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.3.3",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "babel-jest": "^30.1.2",
     "babel-loader": "^10.0.0",
     "copy-webpack-plugin": "^13.0.1",
